@@ -16,7 +16,7 @@
           <% for (var i in theme.menu){ %>
             <li class="nav-item <%- (i === menuKeys[menuKeys.length - 1]) ? '' : 'mb-4 mb-md-0 me-md-3 me-lg-7' %>">
               <a
-                class="nav-link <%- (is_current(theme.menu[i])) ? 'active' : '' %>"
+                class="nav-link text-nowrap <%- (is_current(theme.menu[i])) ? 'active' : '' %>"
                 href="<%- url_for(theme.menu[i]) %>"
               >
                 <span class="position-relative px-2 py-1"><%= i %></span>
